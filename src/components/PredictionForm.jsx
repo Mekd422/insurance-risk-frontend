@@ -28,7 +28,7 @@ function PredictionForm() {
     setResult(null);
 
     try {
-      const response = await fetch("https://insurance-risk-backend.onrender.com/", {
+      const response = await fetch("https://insurance-risk-backend.onrender.com/Predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
